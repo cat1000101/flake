@@ -7,6 +7,7 @@ environment.systemPackages = [
     pkgs.vscodium
     pkgs.discord
     pkgs.steam
+    pkgs.libreoffice
 
     # cli applications/tools
     pkgs.neofetch

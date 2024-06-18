@@ -1,25 +1,26 @@
 
 { config, pkgs, ... }:
 {
+  services.xserver.videoDrivers = ["nvidia"];
+  hardware = {
   # Enable OpenGL
-    hardware.opengl = {
+    opengl = {
     enable = true;
     driSupport = true;
     driSupport32Bit = true;
     };
 
-  services.xserver.videoDrivers = ["nvidia"];
+    nvidia = {
 
-  hardware.nvidia = {
+      # Modesetting is required.
+      modesetting.enable = true;
 
-    # Modesetting is required.
-    modesetting.enable = true;
+      open = false;
 
-    open = false;
+      nvidiaSettings = true;
 
-    nvidiaSettings = true;
-    
-    package = config.boot.kernelPackages.nvidiaPackages.stable;
+      package = config.boot.kernelPackages.nvidiaPackages.stable;
+    };
   };
 
 }
