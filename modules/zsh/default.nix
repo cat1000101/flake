@@ -7,6 +7,7 @@ programs.zsh = {
 
   shellAliases = {
     ll = "ls -l";
+    la = "ls -a";
     update = "sudo nixos-rebuild switch --flake .#cat";
     fix = "sudo nix-store --repair --verify --check-contents";
   };
