@@ -8,10 +8,14 @@ environment.systemPackages = [
     pkgs.discord
     pkgs.steam
     pkgs.libreoffice
+    pkgs.kitty
+    pkgs.wofi
 
     # cli applications/tools
     pkgs.neofetch
     pkgs.btop
+    pkgs.lm_sensors
+    pkgs.lshw
 
     # debug/reverse engeneering
     pkgs.pwndbg
