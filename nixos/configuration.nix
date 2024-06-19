@@ -72,13 +72,14 @@
     pulse.enable = true;
   };
 
-
+  programs.zsh.enable = true;
   users.users.cat = {
     isNormalUser = true;
     description = "Cat";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
     ];
+    shell = pkgs.zsh;
   };
 
   programs.firefox.enable = true;
