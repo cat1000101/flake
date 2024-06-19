@@ -9,7 +9,6 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ./hardware/nvidia.nix
-      ./applications/shell.nix
       ./applications/general.nix
     ];
 
