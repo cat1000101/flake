@@ -25,5 +25,3 @@
   programs.home-manager.enable = true;
 }
 
-# sudo nix-store --repair --verify --check-contents
-
