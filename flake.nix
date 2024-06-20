@@ -34,17 +34,5 @@
         ];
       };
     };
-    hmConfig = {
-      pkgs = nixpkgs.legacyPackages.${system};
-      modules = [
-      ./home-manager/home.nix
-      {
-        home = {
-          username = "cat";
-          homeDirectory = "/home/cat";
-        };
-      }
-      ];
-    };
   };
 }
