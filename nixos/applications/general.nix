@@ -20,6 +20,7 @@ environment.systemPackages = [
     # debug/reverse engeneering
     pkgs.pwndbg
     pkgs.gdb
+    pkgs.gf
     pkgs.ghidra
     pkgs.pwntools
 
