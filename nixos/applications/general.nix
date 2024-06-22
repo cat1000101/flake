@@ -11,10 +11,6 @@ environment.systemPackages = [
     pkgs.kitty
     pkgs.wofi
 
-    pkgs.woeusb-ng
-    pkgs.woeusb
-    pkgs.ntfs3g
-
     # cli applications/tools
     pkgs.neofetch
     pkgs.btop
