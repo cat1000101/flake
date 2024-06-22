@@ -8,11 +8,13 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ./hardware/grub.nix
       ./hardware/nvidia.nix
       ./hardware/amd.nix
       ./hardware/gnome.nix
       ./applications/general.nix
     ];
+  nixpkgs.config.allowUnfree = true;
 
   # experimental features
   nix = {
@@ -22,25 +24,6 @@
       nix-path = config.nix.nixPath;
     };
   };
-
-  # Bootloader.
-  boot.loader = {
-  timeout = 5;
-  efi = {
-    canTouchEfiVariables = true;
-    efiSysMountPoint = "/boot";
-  };
-  grub = {
-    enable = true;
-    efiSupport = true;
-    useOSProber = true;
-    #efiInstallAsRemovable = true; # Otherwise /boot/EFI/BOOT/BOOTX64.EFI isn't generated
-    extraEntriesBeforeNixOS = true;
-    devices = [ "nodev" ];
-  };
-};
-  # boot.loader.systemd-boot.enable = true;
-  # boot.loader.efi.canTouchEfiVariables = true;
 
   # Enable networking
   networking.networkmanager.enable = true;
@@ -87,9 +70,6 @@
   };
 
   programs.firefox.enable = true;
-  nixpkgs.config.allowUnfree = true;
-
-  
   environment.systemPackages = with pkgs; [
     vim
     git
