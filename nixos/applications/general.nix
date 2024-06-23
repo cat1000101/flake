@@ -6,12 +6,14 @@ environment.systemPackages = [
     # applications
     pkgs.vscodium
     pkgs.discord
+    pkgs.spotify
     pkgs.steam
     pkgs.libreoffice
     pkgs.kitty
     pkgs.wofi
 
     # cli applications/tools
+    pkgs.neovim
     pkgs.neofetch
     pkgs.btop
     pkgs.lm_sensors
