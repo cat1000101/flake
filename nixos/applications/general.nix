@@ -13,7 +13,7 @@ environment.systemPackages = [
     pkgs.wofi
 
     # cli applications/tools
-    pkgs.neovim
+    #pkgs.neovim
     pkgs.neofetch
     pkgs.btop
     pkgs.lm_sensors
