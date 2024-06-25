@@ -11,6 +11,7 @@ environment.systemPackages = [
     pkgs.libreoffice
     pkgs.kitty
     pkgs.wofi
+    pkgs.vesktop
 
     # cli applications/tools
     #pkgs.neovim

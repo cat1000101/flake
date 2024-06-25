@@ -25,6 +25,8 @@
     };
   };
 
+  boot.kernelPackages = pkgs.linuxPackages_latest;  # Use the latest stable kernel
+
   # Enable networking
   networking.networkmanager.enable = true;
 
