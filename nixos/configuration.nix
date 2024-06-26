@@ -13,10 +13,10 @@
       ./hardware/amd.nix
       ./hardware/gnome.nix
       ./applications/general.nix
-      ./applications/vscode-server.nix
     ];
   nixpkgs.config.allowUnfree = true;
-
+  programs.nix-ld.enable = true; # enable use of binaraies that are not weird
+  
   # experimental features
   nix = {
     settings = {

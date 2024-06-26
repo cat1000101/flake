@@ -44,4 +44,9 @@ environment.systemPackages = [
     pkgs.libvirt
     pkgs.polkit
   ];
+
+  # programs.nix-ld.libraries = with pkgs; [
+  #   vscode
+  # ];
+
 }
