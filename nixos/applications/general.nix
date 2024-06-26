@@ -4,22 +4,22 @@ environment.systemPackages = [
     pkgs.home-manager
 
     # applications
-    pkgs.vscodium
+    pkgs.librewolf
     pkgs.discord
-    pkgs.vesktop
+    # pkgs.vesktop
     pkgs.spotify
     pkgs.steam
     pkgs.libreoffice
-    pkgs.kitty
-    pkgs.wofi
     pkgs.bitwarden
 
     # cli applications/tools
-    #pkgs.neovim
+    pkgs.neovim
+    pkgs.kitty
     pkgs.neofetch
     pkgs.btop
     pkgs.lm_sensors
     pkgs.lshw
+    pkgs.wofi
 
     # debug/reverse engeneering
     pkgs.pwndbg
@@ -29,6 +29,9 @@ environment.systemPackages = [
     pkgs.pwntools
 
     # languages/programming
+    pkgs.vscodium
+    pkgs.vscode
+    pkgs.zed-editor
     pkgs.code-server
     pkgs.python3
     pkgs.zig
@@ -40,6 +43,5 @@ environment.systemPackages = [
     pkgs.virt-manager
     pkgs.libvirt
     pkgs.polkit
-    
   ];
 }
