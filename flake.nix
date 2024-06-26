@@ -9,7 +9,7 @@
     };
   };
 
-  outputs = {self,nixpkgs, home-manager, vscode-server}:
+  outputs = {self,nixpkgs, home-manager}:
   let 
     system = "x86_64-linux";
     pkgs = import nixpkgs{
@@ -24,7 +24,6 @@
         inherit system;
         modules = [
           ./nixos/configuration.nix
-          (import ./modules/vscode-server/flake.nix).outputs.vscodeServer
           home-manager.nixosModules.home-manager {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;

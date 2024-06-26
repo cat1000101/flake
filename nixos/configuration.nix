@@ -13,6 +13,7 @@
       ./hardware/amd.nix
       ./hardware/gnome.nix
       ./applications/general.nix
+      ./applications/vscode-server.nix
     ];
   nixpkgs.config.allowUnfree = true;
 
