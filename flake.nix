@@ -24,7 +24,7 @@
         inherit system;
         modules = [
           ./nixos/configuration.nix
-          ./modules/vscode-server
+          (import ./modules/vscode-server/flake.nix).outputs.vscodeServer
           home-manager.nixosModules.home-manager {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
