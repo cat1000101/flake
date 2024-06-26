@@ -6,12 +6,13 @@ environment.systemPackages = [
     # applications
     pkgs.vscodium
     pkgs.discord
+    pkgs.vesktop
     pkgs.spotify
     pkgs.steam
     pkgs.libreoffice
     pkgs.kitty
     pkgs.wofi
-    pkgs.vesktop
+    pkgs.bitwarden
 
     # cli applications/tools
     #pkgs.neovim
@@ -28,6 +29,7 @@ environment.systemPackages = [
     pkgs.pwntools
 
     # languages/programming
+    pkgs.code-server
     pkgs.python3
     pkgs.zig
     pkgs.libgcc

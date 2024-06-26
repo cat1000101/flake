@@ -26,6 +26,9 @@
       # Modesetting is required.
       modesetting.enable = true;
 
+      # stops screen tering sometimes?
+      forceFullCompositionPipeline = true;
+
       open = false;
 
       nvidiaSettings = true;
