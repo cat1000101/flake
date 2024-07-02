@@ -5,6 +5,7 @@ environment.systemPackages = [
 
     # applications
     pkgs.librewolf
+    pkgs.firefox
     pkgs.discord
     # pkgs.vesktop
     pkgs.spotify
