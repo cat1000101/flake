@@ -13,6 +13,7 @@
       ./hardware/amd.nix
       ./hardware/gnome.nix
       ./applications/general.nix
+      ./applications/osdev.nix
     ];
   nixpkgs.config.allowUnfree = true;
   programs.nix-ld.enable = true; # enable use of binaraies that are not weird
