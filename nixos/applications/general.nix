@@ -21,6 +21,8 @@ environment.systemPackages = [
     pkgs.lm_sensors
     pkgs.lshw
     pkgs.wofi
+    pkgs.unzip
+    pkgs.fzf
 
     # debug/reverse engeneering
     pkgs.pwndbg
@@ -38,6 +40,7 @@ environment.systemPackages = [
     pkgs.zig
     pkgs.libgcc
     pkgs.gnumake
+    pkgs.cmake
 
     # emulation
     pkgs.qemu
