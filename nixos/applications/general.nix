@@ -24,6 +24,7 @@ environment.systemPackages = with pkgs; [
     unzip
     fzf
     quickemu
+    quickgui
 
     # debug/reverse engeneering
     pwndbg

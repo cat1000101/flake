@@ -9,7 +9,5 @@ pkgs.mkShell {
         nasm
         gnumake
         clang
-        xorg.libX11
-        libGL
     ];
 }
