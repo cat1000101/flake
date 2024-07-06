@@ -16,6 +16,7 @@ environment.systemPackages = with pkgs; [
     # cli applications/tools
     neovim
     kitty
+    wine
     neofetch
     btop
     lm_sensors
